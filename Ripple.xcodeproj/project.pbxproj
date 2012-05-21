@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4268561D156A8545009007AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268561C156A8545009007AE /* UIKit.framework */; };
+		4268561F156A8545009007AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268561E156A8545009007AE /* Foundation.framework */; };
+		42685621156A8545009007AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42685620156A8545009007AE /* CoreGraphics.framework */; };
+		42685627156A8545009007AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42685625156A8545009007AE /* InfoPlist.strings */; };
+		42685629156A8546009007AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42685628156A8545009007AE /* main.m */; };
+		4268562D156A8546009007AE /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268562C156A8546009007AE /* RPAppDelegate.m */; };
+		42685630156A8546009007AE /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268562F156A8546009007AE /* RPViewController.m */; };
+		42685633156A8546009007AE /* RPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42685631156A8546009007AE /* RPViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42685618156A8545009007AE /* Ripple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ripple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268561C156A8545009007AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4268561E156A8545009007AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42685620156A8545009007AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42685624156A8545009007AE /* Ripple-Info.plist */ = {isa = PBXFileReference; path = "Ripple-Info.plist"; sourceTree = "<group>"; };
+		42685626156A8545009007AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42685628156A8545009007AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4268562A156A8546009007AE /* Ripple-Prefix.pch */ = {isa = PBXFileReference; path = "Ripple-Prefix.pch"; sourceTree = "<group>"; };
+		4268562B156A8546009007AE /* RPAppDelegate.h */ = {isa = PBXFileReference; path = RPAppDelegate.h; sourceTree = "<group>"; };
+		4268562C156A8546009007AE /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPAppDelegate.m; sourceTree = "<group>"; };
+		4268562E156A8546009007AE /* RPViewController.h */ = {isa = PBXFileReference; path = RPViewController.h; sourceTree = "<group>"; };
+		4268562F156A8546009007AE /* RPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPViewController.m; sourceTree = "<group>"; };
+		42685632156A8546009007AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RPViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42685615156A8545009007AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268561D156A8545009007AE /* UIKit.framework in Frameworks */,
+				4268561F156A8545009007AE /* Foundation.framework in Frameworks */,
+				42685621156A8545009007AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4268560D156A8545009007AE = {
+			isa = PBXGroup;
+			children = (
+				42685622156A8545009007AE /* Ripple */,
+				4268561B156A8545009007AE /* Frameworks */,
+				42685619156A8545009007AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42685619156A8545009007AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42685618156A8545009007AE /* Ripple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4268561B156A8545009007AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4268561C156A8545009007AE /* UIKit.framework */,
+				4268561E156A8545009007AE /* Foundation.framework */,
+				42685620156A8545009007AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42685622156A8545009007AE /* Ripple */ = {
+			isa = PBXGroup;
+			children = (
+				4268562B156A8546009007AE /* RPAppDelegate.h */,
+				4268562C156A8546009007AE /* RPAppDelegate.m */,
+				4268562E156A8546009007AE /* RPViewController.h */,
+				4268562F156A8546009007AE /* RPViewController.m */,
+				42685631156A8546009007AE /* RPViewController.xib */,
+				42685623156A8545009007AE /* Supporting Files */,
+			);
+			path = Ripple;
+			sourceTree = "<group>";
+		};
+		42685623156A8545009007AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42685624156A8545009007AE /* Ripple-Info.plist */,
+				42685625156A8545009007AE /* InfoPlist.strings */,
+				42685628156A8545009007AE /* main.m */,
+				4268562A156A8546009007AE /* Ripple-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42685617156A8545009007AE /* Ripple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42685636156A8546009007AE /* Build configuration list for PBXNativeTarget "Ripple" */;
+			buildPhases = (
+				42685614156A8545009007AE /* Sources */,
+				42685615156A8545009007AE /* Frameworks */,
+				42685616156A8545009007AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ripple;
+			productName = Ripple;
+			productReference = 42685618156A8545009007AE /* Ripple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4268560F156A8545009007AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RP;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "torinnguyen@gmail.com";
+			};
+			buildConfigurationList = 42685612156A8545009007AE /* Build configuration list for PBXProject "Ripple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4268560D156A8545009007AE;
+			productRefGroup = 42685619156A8545009007AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42685617156A8545009007AE /* Ripple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42685616156A8545009007AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42685627156A8545009007AE /* InfoPlist.strings in Resources */,
+				42685633156A8546009007AE /* RPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42685614156A8545009007AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42685629156A8546009007AE /* main.m in Sources */,
+				4268562D156A8546009007AE /* RPAppDelegate.m in Sources */,
+				42685630156A8546009007AE /* RPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42685625156A8545009007AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42685626156A8545009007AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42685631156A8546009007AE /* RPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42685632156A8546009007AE /* en */,
+			);
+			name = RPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42685634156A8546009007AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		42685635156A8546009007AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42685637156A8546009007AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ripple/Ripple-Prefix.pch";
+				INFOPLIST_FILE = "Ripple/Ripple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42685638156A8546009007AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ripple/Ripple-Prefix.pch";
+				INFOPLIST_FILE = "Ripple/Ripple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42685612156A8545009007AE /* Build configuration list for PBXProject "Ripple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42685634156A8546009007AE /* Debug */,
+				42685635156A8546009007AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42685636156A8546009007AE /* Build configuration list for PBXNativeTarget "Ripple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42685637156A8546009007AE /* Debug */,
+				42685638156A8546009007AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4268560F156A8545009007AE /* Project object */;
+}
