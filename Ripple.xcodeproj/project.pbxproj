@@ -10,11 +10,18 @@
 		4268561D156A8545009007AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268561C156A8545009007AE /* UIKit.framework */; };
 		4268561F156A8545009007AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268561E156A8545009007AE /* Foundation.framework */; };
 		42685621156A8545009007AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42685620156A8545009007AE /* CoreGraphics.framework */; };
-		42685627156A8545009007AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42685625156A8545009007AE /* InfoPlist.strings */; };
 		42685629156A8546009007AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42685628156A8545009007AE /* main.m */; };
 		4268562D156A8546009007AE /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268562C156A8546009007AE /* RPAppDelegate.m */; };
 		42685630156A8546009007AE /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268562F156A8546009007AE /* RPViewController.m */; };
-		42685633156A8546009007AE /* RPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42685631156A8546009007AE /* RPViewController.xib */; };
+		42685643156A871F009007AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42685642156A871F009007AE /* QuartzCore.framework */; };
+		4287920B156E332400DD2299 /* BlurShader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4287920A156E332400DD2299 /* BlurShader.txt */; };
+		42B0CDFA156A9A7A00B3537A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B0CDF9156A9A7A00B3537A /* OpenGLES.framework */; };
+		42B0CE14156A9C1F00B3537A /* EffectView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42B0CE0C156A9C1F00B3537A /* EffectView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42B0CE17156A9C1F00B3537A /* RadialWaveShader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B0CE10156A9C1F00B3537A /* RadialWaveShader.txt */; };
+		42B0CE18156A9C1F00B3537A /* UIViewController+Ripple.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B0CE12156A9C1F00B3537A /* UIViewController+Ripple.m */; };
+		42B0CE19156A9C1F00B3537A /* VertexShader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B0CE13156A9C1F00B3537A /* VertexShader.txt */; };
+		42F5BEB6156B3C5700234F28 /* RPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F5BEB5156B3C5700234F28 /* RPViewController.xib */; };
+		42FC3E68156AC92C0012E208 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42FC3E67156AC92C0012E208 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +29,24 @@
 		4268561C156A8545009007AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4268561E156A8545009007AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42685620156A8545009007AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42685624156A8545009007AE /* Ripple-Info.plist */ = {isa = PBXFileReference; path = "Ripple-Info.plist"; sourceTree = "<group>"; };
-		42685626156A8545009007AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42685624156A8545009007AE /* Ripple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ripple-Info.plist"; sourceTree = "<group>"; };
 		42685628156A8545009007AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4268562A156A8546009007AE /* Ripple-Prefix.pch */ = {isa = PBXFileReference; path = "Ripple-Prefix.pch"; sourceTree = "<group>"; };
-		4268562B156A8546009007AE /* RPAppDelegate.h */ = {isa = PBXFileReference; path = RPAppDelegate.h; sourceTree = "<group>"; };
+		4268562A156A8546009007AE /* Ripple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ripple-Prefix.pch"; sourceTree = "<group>"; };
+		4268562B156A8546009007AE /* RPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPAppDelegate.h; sourceTree = "<group>"; };
 		4268562C156A8546009007AE /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPAppDelegate.m; sourceTree = "<group>"; };
-		4268562E156A8546009007AE /* RPViewController.h */ = {isa = PBXFileReference; path = RPViewController.h; sourceTree = "<group>"; };
+		4268562E156A8546009007AE /* RPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPViewController.h; sourceTree = "<group>"; };
 		4268562F156A8546009007AE /* RPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPViewController.m; sourceTree = "<group>"; };
-		42685632156A8546009007AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RPViewController.xib; sourceTree = "<group>"; };
+		42685642156A871F009007AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4287920A156E332400DD2299 /* BlurShader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlurShader.txt; sourceTree = "<group>"; };
+		42B0CDF9156A9A7A00B3537A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		42B0CE0B156A9C1F00B3537A /* EffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectView.h; sourceTree = "<group>"; };
+		42B0CE0C156A9C1F00B3537A /* EffectView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectView.mm; sourceTree = "<group>"; };
+		42B0CE10156A9C1F00B3537A /* RadialWaveShader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RadialWaveShader.txt; sourceTree = "<group>"; };
+		42B0CE11156A9C1F00B3537A /* UIViewController+Ripple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ripple.h"; sourceTree = "<group>"; };
+		42B0CE12156A9C1F00B3537A /* UIViewController+Ripple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ripple.m"; sourceTree = "<group>"; };
+		42B0CE13156A9C1F00B3537A /* VertexShader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.txt; sourceTree = "<group>"; };
+		42F5BEB5156B3C5700234F28 /* RPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RPViewController.xib; sourceTree = "<group>"; };
+		42FC3E67156AC92C0012E208 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B0CDFA156A9A7A00B3537A /* OpenGLES.framework in Frameworks */,
+				42685643156A871F009007AE /* QuartzCore.framework in Frameworks */,
 				4268561D156A8545009007AE /* UIKit.framework in Frameworks */,
 				4268561F156A8545009007AE /* Foundation.framework in Frameworks */,
 				42685621156A8545009007AE /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +68,7 @@
 		4268560D156A8545009007AE = {
 			isa = PBXGroup;
 			children = (
+				42B0CE0A156A9C1F00B3537A /* src */,
 				42685622156A8545009007AE /* Ripple */,
 				4268561B156A8545009007AE /* Frameworks */,
 				42685619156A8545009007AE /* Products */,
@@ -67,6 +86,8 @@
 		4268561B156A8545009007AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42B0CDF9156A9A7A00B3537A /* OpenGLES.framework */,
+				42685642156A871F009007AE /* QuartzCore.framework */,
 				4268561C156A8545009007AE /* UIKit.framework */,
 				4268561E156A8545009007AE /* Foundation.framework */,
 				42685620156A8545009007AE /* CoreGraphics.framework */,
@@ -81,7 +102,7 @@
 				4268562C156A8546009007AE /* RPAppDelegate.m */,
 				4268562E156A8546009007AE /* RPViewController.h */,
 				4268562F156A8546009007AE /* RPViewController.m */,
-				42685631156A8546009007AE /* RPViewController.xib */,
+				42F5BEB5156B3C5700234F28 /* RPViewController.xib */,
 				42685623156A8545009007AE /* Supporting Files */,
 			);
 			path = Ripple;
@@ -90,12 +111,26 @@
 		42685623156A8545009007AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42FC3E67156AC92C0012E208 /* bg.jpg */,
 				42685624156A8545009007AE /* Ripple-Info.plist */,
-				42685625156A8545009007AE /* InfoPlist.strings */,
 				42685628156A8545009007AE /* main.m */,
 				4268562A156A8546009007AE /* Ripple-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42B0CE0A156A9C1F00B3537A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				42B0CE0B156A9C1F00B3537A /* EffectView.h */,
+				42B0CE0C156A9C1F00B3537A /* EffectView.mm */,
+				42B0CE11156A9C1F00B3537A /* UIViewController+Ripple.h */,
+				42B0CE12156A9C1F00B3537A /* UIViewController+Ripple.m */,
+				42B0CE13156A9C1F00B3537A /* VertexShader.txt */,
+				4287920A156E332400DD2299 /* BlurShader.txt */,
+				42B0CE10156A9C1F00B3537A /* RadialWaveShader.txt */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +185,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42685627156A8545009007AE /* InfoPlist.strings in Resources */,
-				42685633156A8546009007AE /* RPViewController.xib in Resources */,
+				42B0CE17156A9C1F00B3537A /* RadialWaveShader.txt in Resources */,
+				42B0CE19156A9C1F00B3537A /* VertexShader.txt in Resources */,
+				42FC3E68156AC92C0012E208 /* bg.jpg in Resources */,
+				42F5BEB6156B3C5700234F28 /* RPViewController.xib in Resources */,
+				4287920B156E332400DD2299 /* BlurShader.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,29 +203,12 @@
 				42685629156A8546009007AE /* main.m in Sources */,
 				4268562D156A8546009007AE /* RPAppDelegate.m in Sources */,
 				42685630156A8546009007AE /* RPViewController.m in Sources */,
+				42B0CE14156A9C1F00B3537A /* EffectView.mm in Sources */,
+				42B0CE18156A9C1F00B3537A /* UIViewController+Ripple.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		42685625156A8545009007AE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42685626156A8545009007AE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		42685631156A8546009007AE /* RPViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42685632156A8546009007AE /* en */,
-			);
-			name = RPViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		42685634156A8546009007AE /* Debug */ = {
@@ -243,7 +264,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ripple/Ripple-Prefix.pch";
 				INFOPLIST_FILE = "Ripple/Ripple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,7 +277,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ripple/Ripple-Prefix.pch";
 				INFOPLIST_FILE = "Ripple/Ripple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -278,6 +303,7 @@
 				42685638156A8546009007AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

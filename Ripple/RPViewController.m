@@ -7,28 +7,35 @@
 //
 
 #import "RPViewController.h"
+#import "UIViewController+Ripple.h"
 
 @interface RPViewController ()
-
+@property (nonatomic, strong) IBOutlet UIView *dummyView;
+-(IBAction)onBtnShow:(id)sender;
 @end
 
 @implementation RPViewController
+@synthesize dummyView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    dummyView.alpha = 0;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+-(IBAction)onBtnShow:(id)sender
+{
+    [self presentViewWithRipple:self.dummyView];
 }
 
 @end
